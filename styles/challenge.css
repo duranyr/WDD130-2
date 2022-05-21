@@ -1,0 +1,17 @@
+.circles {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+}
+.desk, .graphic, .person {
+    width: 150px;
+    border-radius: 50%;
+    border: 10px solid rgb(77, 76, 76);
+    margin: 40px 100px;
+}
+#images {
+    width: 80%;
+    height: 230px;
+    background-color:grey;
+    margin: 0 auto;
+}
