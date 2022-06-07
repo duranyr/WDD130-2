@@ -23,11 +23,10 @@ Fonts are separated by a | */
   --paragraph-color-on-color: #b2375b; /* paragraph text on a colored background */ 
   --paragraph-background-color: #f1c3a2; 
   --nav-link-color: #4C1E4F;
-  --nav-background-color: #b2375b;
+  --nav-background-color: #D98083;
   --nav-hover-link-color: #f44174;
   --nav-hover-background-color: #FEE1C7;
 }
-
 
 /*  Look around below...but DON'T CHANGE ANYTHING! */
 
