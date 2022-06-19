@@ -232,7 +232,7 @@ nav{
     width: 300px;
     justify-content: center;
 }
-.arizona-river p, .idaho-river p, .utah-river p{
+.arizona-river p, .idaho-river p, .utah-river p, .views p, .faq p{
     text-align: justify;
     }
 @media screen and (max-width: 900px) {
