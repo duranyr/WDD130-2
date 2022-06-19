@@ -237,7 +237,8 @@ nav{
     text-align: justify;
     }
 .arizona-river p:hover,  .idaho-river p:hover, .utah-river p:hover, .views p:hover{
-    text-decoration: underline;
+    background-color: aliceblue;
+    font-size: 18px;
 }
 @media screen and (max-width: 900px) {
     #hero, .home-grid, .rivers-grid {
