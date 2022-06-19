@@ -228,6 +228,7 @@ nav{
     text-align:center;
     }
 .canyon-img, .grandc-img, .salmon-img,.views-img{
+    border: 10px solid rgb(161, 25, 120);
     height: 300px;
     width: 300px;
     justify-content: center;
@@ -235,6 +236,9 @@ nav{
 .arizona-river p, .idaho-river p, .utah-river p, .views p, .faq p{
     text-align: justify;
     }
+.arizona-river p:hover,  .idaho-river p:hover, .utah-river p:hover, .views p:hover{
+    text-decoration: underline;
+}
 @media screen and (max-width: 900px) {
     #hero, .home-grid, .rivers-grid {
         display: block;
