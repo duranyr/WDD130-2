@@ -250,11 +250,10 @@ nav{
 form {
     /* Center the form on the page */
     margin: 0 auto;
-    margin-top: 100px;
     width: 400px;
     /* Form outline */
     padding: 1em;
-    border: 1px solid #CCC;
+    border: 2px solid #CCC;
     border-radius: 1em;
   }
   
