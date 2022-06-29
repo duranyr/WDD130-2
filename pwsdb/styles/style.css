@@ -85,7 +85,7 @@ nav{
 #hero-msg h1 {
     font-size: 2em;
 }
-.home-grid{
+.home-grid, .cakes-grid{
     display: grid;
     grid-template-columns: repeat(10,1fr);
 }
