@@ -234,7 +234,7 @@ main section img {
     grid-row: 9/12;
 }
 @media screen and (max-width: 900px) {
-    #hero, .home-grid {
+    #hero, .home-grid, .cakes-grid, .desserts-grid {
         display: block;
         height: auto;
     }
