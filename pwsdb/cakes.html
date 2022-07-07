@@ -71,10 +71,8 @@
             <section class="msg3">
                 <h2>Month's Recipe</h2>
                 <h2>Carrot Cake</h2>
-                <summary>      
-                    Ingredients<br>
-                </summary>
-                <details>
+                <button class="accordion">Ingredients</button>
+                <div class="panel">
                     <ul>
                     <li>2 cups (260g) chopped pecans (1 cup for cake, 1 cup for garnish. Nuts are optional. )*</li>
                     <li>1 and 1/2 cups (300g) packed light or dark brown sugar</li>
@@ -99,12 +97,11 @@
                     <li>1 and 1/2 teaspoons pure vanilla extract</li>
                     <li>pinch of salt, to taste</li>
                     <br>
-                </details>
-                <summary>
-                    Instructions
-                    <br>
-                </summary>
-                <details>
+                    </ul>
+                </div>
+                <button class="accordion">Preparation</button>
+                <div class="panel">
+                    <ul>              
                     Make the cake: Preheat oven to 300°F (149°C). Line a large baking sheet with parchment paper or a silicone baking mat. Spread the chopped pecans on the sheet and toast for 7-8 minutes. Remove from the oven and allow to cool for 10-15 minutes.
                     Turn the oven up to 350°F (177°C). Grease two or three 9-inch cake pans, line with parchment paper, then grease the parchment paper. Parchment paper helps the cakes seamlessly release from the pans.
                     Whisk the brown sugar, granulated sugar, oil, eggs, applesauce, and vanilla together in a large bowl until combined and no brown sugar lumps remain. In another large bowl, whisk the flour, baking powder, baking soda, salt, cinnamon, ginger, nutmeg, and cloves together. Pour the wet ingredients into the dry ingredients and, using a rubber spatula or wooden spoon, fold the ingredients together until just combined. Fold in the carrots and 1 cup of the toasted pecans. (The rest of the pecans are for garnish.)
@@ -114,8 +111,7 @@
                     Assemble and frost: First, using a large serrated knife or cake leveler, layer off the tops of the cakes to create a flat surface. Place 1 cake layer on your cake stand or serving plate. Evenly cover the top with frosting. Top with 2nd layer, more frosting, and then top with the 3rd layer. Spread remaining frosting all over the top and sides. Decorate the sides and top of the cake with the remaining toasted pecans. Refrigerate cake for at least 15-20 minutes before slicing. This helps the cake hold its shape when cutting.
                     Cover leftover frosted cake tightly and store in the refrigerator for up to 5 days.
                     </ul>
-             </p>
-            </details>
+                  
              </section>
              <section class="month-recipe">
                 <img class="card-img" src="images/month-recipe.jpg" alt="Month Recipe">
@@ -138,5 +134,21 @@
             </div>
         </footer>
     </div>
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+        
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight) {
+              panel.style.maxHeight = null;
+            } else {
+              panel.style.maxHeight = panel.scrollHeight + "px";
+            } 
+          });
+        }
+        </script>
 </body>
 </html>

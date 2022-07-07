@@ -165,6 +165,7 @@ nav{
     font-family: "Architects Daughter", "Helvetica Neue", Helvetica, sans-serif;
     text-align: center;
     font-size: 1.5em;
+    color:#4C1E4F;
 }
 .msg p, .msg1 p, .msg2 p, .msg4 p{
     font-family: 'Nanum Pen Script', Verdana, Geneva, Tahoma, sans-serif;
@@ -233,6 +234,43 @@ main section img {
     grid-column: 2/5;
     grid-row: 9/12;
 }
+.accordion {
+    background-color: #eee;
+    color: rgb(161, 25, 120);
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+  }
+  
+  .active, .accordion:hover {
+    background-color: #ccc;
+  }
+  
+  .accordion:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\2212";
+  }
+  
+  .panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+
 @media screen and (max-width: 900px) {
     #hero, .home-grid, .cakes-grid, .desserts-grid {
         display: block;
