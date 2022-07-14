@@ -213,13 +213,13 @@ main section img {
     box-shadow: 5px 5px 10px #6f7364;
 }
 #background {
-    height: min-height;
+    min-height: fit-content;
     background-color:#f1c3a2; 
     grid-column: 1/11;
     grid-row: 4/9;
 }
 #background-dessert {
-    height: min-height;
+    min-height: fit-content;
     background-color:#f1c3a2; 
     grid-column: 1/11;
     grid-row: 8/13;
