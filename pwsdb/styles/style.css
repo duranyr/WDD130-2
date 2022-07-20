@@ -282,7 +282,7 @@ main section img {
     width: 400px;
     /* Form outline */
     padding: 1em;
-    border: 2px solid rgb(161, 25, 120);
+    border: 3px solid rgb(161, 25, 120);
     border-radius: 1em;
   }
   
